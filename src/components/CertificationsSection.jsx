@@ -1,3 +1,9 @@
+"use client";
+
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export const CertificationsSection = () => {
   const certifications = [
     {
@@ -8,7 +14,7 @@ export const CertificationsSection = () => {
     {
       title: "Introduction to Artificial Intelligence",
       issuer: "IBM",
-       link: "https://www.credly.com/badges/a1ca003a-81ac-4bde-a325-c8ee9af635ad/public_url",
+      link: "https://www.credly.com/badges/a1ca003a-81ac-4bde-a325-c8ee9af635ad/public_url",
     },
     {
       title: "Introduction to MongoDB",
@@ -26,10 +32,22 @@ export const CertificationsSection = () => {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      offset: 100,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
     <section id="certifications" className="py-24 px-4 relative bg-secondary/10">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+        <h2
+          className="text-3xl md:text-4xl font-bold mb-12 text-center"
+          data-aos="fade-up"
+        >
           My <span className="text-primary">Certifications</span>
         </h2>
 
@@ -38,6 +56,8 @@ export const CertificationsSection = () => {
             <div
               key={index}
               className="gradient-border p-6 rounded-xl bg-card card-hover transition-shadow"
+              data-aos="zoom-in"
+              data-aos-delay={index * 100} // stagger animation for each card
             >
               <h4 className="text-lg font-semibold text-foreground mb-1">
                 {cert.title}

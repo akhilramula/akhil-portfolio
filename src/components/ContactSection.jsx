@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Linkedin,
   Github,
@@ -10,11 +12,22 @@ import {
 import { SiWhatsapp, SiGmail } from "react-icons/si";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const ContactSection = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      offset: 100,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -31,22 +44,29 @@ export const ContactSection = () => {
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+        <h2
+          className="text-3xl md:text-4xl font-bold mb-4 text-center"
+          data-aos="fade-up"
+        >
           Get In <span className="text-primary"> Touch</span>
         </h2>
 
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+        <p
+          className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           Have a project in mind or want to collaborate? I'm always open to new
           opportunities. Let’s connect!
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Info */}
-          <div className="space-y-8">
+          <div className="space-y-8" data-aos="fade-right" data-aos-delay="200">
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
 
             <div className="space-y-6">
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-4" data-aos="fade-right" data-aos-delay="250">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Mail className="h-5 w-5 text-primary" />
                 </div>
@@ -61,7 +81,7 @@ export const ContactSection = () => {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-4" data-aos="fade-right" data-aos-delay="300">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Phone className="h-5 w-5 text-primary" />
                 </div>
@@ -76,21 +96,19 @@ export const ContactSection = () => {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-4" data-aos="fade-right" data-aos-delay="350">
                 <div className="p-3 rounded-full bg-primary/10">
                   <MapPin className="h-5 w-5 text-primary" />
                 </div>
                 <div>
                   <h4 className="font-medium">Location</h4>
-                  <span className="text-muted-foreground">
-                    Hyderabad, India
-                  </span>
+                  <span className="text-muted-foreground">Hyderabad, India</span>
                 </div>
               </div>
             </div>
 
             {/* Social Links */}
-            <div className="pt-8">
+            <div className="pt-8" data-aos="fade-right" data-aos-delay="400">
               <h4 className="font-medium mb-4 text-left">Connect With Me</h4>
               <div className="flex space-x-4 items-center">
                 <a
@@ -136,11 +154,12 @@ export const ContactSection = () => {
           {/* Contact Form */}
           <div
             className="bg-card p-8 rounded-lg shadow-xs"
-            onSubmit={handleSubmit}
+            data-aos="fade-left"
+            data-aos-delay="250"
           >
             <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
 
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
                   Your Name
@@ -205,6 +224,8 @@ export const ContactSection = () => {
         href="#hero"
         className="absolute right-6 bottom-6 p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors"
         title="Back to top"
+        data-aos="fade-up"
+        data-aos-delay="500"
       >
         <ArrowUp size={20} />
       </a>
