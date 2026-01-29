@@ -20,32 +20,36 @@ export const AboutSection = () => {
           className="text-3xl md:text-4xl font-bold mb-12 text-center"
           data-aos="fade-up"
         >
-          About <span className="text-primary"> Me</span>
+          About <span className="text-primary">Me</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Text Side */}
           <div className="space-y-6" data-aos="fade-right">
             <p className="text-muted-foreground text-lg leading-relaxed">
-              I'm a <b>Java Full Stack Developer</b> with hands-on experience in
-              building scalable, real-time applications using Spring Boot,
-              React.js, MySQL and MongoDB.
+              I’m a <b>Results-driven Software Engineer</b> specializing in
+              <b> Java Full Stack and Cloud-ready application development</b>,
+              with hands-on experience building scalable backend services and
+              responsive frontends.
             </p>
 
             <p className="text-muted-foreground text-lg leading-relaxed">
-              I’m an <b>AWS Certified Cloud Practitioner</b> with a strong
-              foundation in backend systems, REST APIs, and microservices.
+              I work extensively with <b>Spring Boot, REST APIs, React.js</b>,
+              and modern databases like <b>MySQL, MongoDB, and Oracle</b> to
+              deliver performant, production-ready solutions.
             </p>
 
             <p className="text-muted-foreground text-lg leading-relaxed">
-              During my internship at SK Soft Solutions, I revamped UI
-              components, optimized databases, and improved system performance
-              across the stack.
+              I’m an <b>AWS Certified Solutions Architect – Associate, AWS Certified Cloud Practitioner</b> and
+              <b> GitHub Copilot Certified</b>, with a strong foundation in
+              Agile practices, CI/CD pipelines, and cloud fundamentals.
             </p>
 
             <p className="text-muted-foreground text-lg leading-relaxed">
-              I enjoy working in Agile teams and aspire to contribute to
-              distributed systems like Azure Storage.
+              During my internship at <b>SK Soft Solutions</b>, I reduced API
+              response times by <b>40%</b>, improved UI engagement by <b>60%</b>,
+              and optimized database performance by <b>30%</b> across multiple
+              projects.
             </p>
 
             <div
@@ -57,7 +61,7 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href="/Akhil_Ramula_resume.pdf"
+                href="/akhil_resume.pdf"
                 download
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
@@ -79,11 +83,11 @@ export const AboutSection = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">
-                    Full Stack Development
+                    Full Stack Engineering
                   </h4>
                   <p className="text-muted-foreground">
-                    Building modern APIs and UIs using Spring Boot, React.js,
-                    and Databases like MySQL and MongoDB.
+                    Designing scalable backend services and modern UIs using
+                    Spring Boot, React.js, REST APIs, and SQL/NoSQL databases.
                   </p>
                 </div>
               </div>
@@ -99,9 +103,12 @@ export const AboutSection = () => {
                   <User className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Cloud & Dev Tools</h4>
+                  <h4 className="font-semibold text-lg">
+                    Cloud & DevOps Tools
+                  </h4>
                   <p className="text-muted-foreground">
-                    AWS Certified | Git, Maven, Postman, Agile & CI experience.
+                    AWS Certified | Git, GitHub, Postman, CI/CD pipelines,
+                    Agile workflows, and cloud-native best practices.
                   </p>
                 </div>
               </div>
@@ -117,9 +124,12 @@ export const AboutSection = () => {
                   <Briefcase className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Team Collaboration</h4>
+                  <h4 className="font-semibold text-lg">
+                    Professional Experience
+                  </h4>
                   <p className="text-muted-foreground">
-                    Agile delivery, code reviews & cross-functional teamwork.
+                    Internship experience delivering high-impact features,
+                    performance optimizations, and Agile sprint contributions.
                   </p>
                 </div>
               </div>
