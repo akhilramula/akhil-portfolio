@@ -22,16 +22,22 @@ export const HeroSection = () => {
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
               <span className="opacity-0 animate-fade-in">Hi, I'm</span>
               <span className="text-primary opacity-0 animate-fade-in-delay-1">
-                {" "}Akhil
+                {" "}
+                Akhil
               </span>
               <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
-                {" "}Ramula
+                {" "}
+                Ramula
               </span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground opacity-0 animate-fade-in-delay-3">
-              Java Full Stack Developer skilled in building scalable applications with Spring Boot, React.js, MySQL, and MongoDB. <br />
-              Passionate about cloud technologies, RESTful APIs, and creating impactful digital solutions.
+             <b> Cloud & Full Stack Developer </b> specializing in Java, Spring Boot,
+              and React, with experience building scalable backend services and
+              modern web applications. <br /> <br />
+             <b>AWS Certified (SAA-C03, DVA-C02, CLF-C02) </b> with a strong focus on
+              cloud-native development, RESTful APIs, and reliable software
+              systems.
             </p>
 
             <div className="pt-4 opacity-0 animate-fade-in-delay-4">

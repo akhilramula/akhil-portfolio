@@ -20,36 +20,34 @@ export const AboutSection = () => {
           className="text-3xl md:text-4xl font-bold mb-12 text-center"
           data-aos="fade-up"
         >
-          About <span className="text-primary">Me</span>
+          About <span className="text-primary"> Me</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Text Side */}
           <div className="space-y-6" data-aos="fade-right">
             <p className="text-muted-foreground text-lg leading-relaxed">
-              I’m a <b>Results-driven Software Engineer</b> specializing in
-              <b> Java Full Stack and Cloud-ready application development</b>,
-              with hands-on experience building scalable backend services and
-              responsive frontends.
+              I'm a <b>Cloud & Full Stack Developer</b> with hands-on experience
+              building scalable backend services and responsive web
+              applications using <b>Java, Spring Boot, React.js, MySQL, and MongoDB</b>.
             </p>
 
             <p className="text-muted-foreground text-lg leading-relaxed">
-              I work extensively with <b>Spring Boot, REST APIs, React.js</b>,
-              and modern databases like <b>MySQL, MongoDB, and Oracle</b> to
-              deliver performant, production-ready solutions.
+              I’m <b>AWS Certified (SAA-C03, DVA-C02, CLF-C02)</b> with a strong
+              understanding of cloud-native application design, REST APIs, and
+              backend architecture.
             </p>
 
             <p className="text-muted-foreground text-lg leading-relaxed">
-              I’m an <b>AWS Certified Solutions Architect – Associate, AWS Certified Cloud Practitioner</b> and
-              <b> GitHub Copilot Certified</b>, with a strong foundation in
-              Agile practices, CI/CD pipelines, and cloud fundamentals.
+              During my internship at SK Soft Solutions, I improved UI
+              components, optimized database queries, and contributed to
+              backend services to enhance overall application performance.
             </p>
 
             <p className="text-muted-foreground text-lg leading-relaxed">
-              During my internship at <b>SK Soft Solutions</b>, I reduced API
-              response times by <b>40%</b>, improved UI engagement by <b>60%</b>,
-              and optimized database performance by <b>30%</b> across multiple
-              projects.
+              I enjoy solving technical problems, learning new technologies,
+              and building reliable systems that combine modern web
+              development with cloud infrastructure.
             </p>
 
             <div
@@ -83,11 +81,11 @@ export const AboutSection = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">
-                    Full Stack Engineering
+                    Full Stack Development
                   </h4>
                   <p className="text-muted-foreground">
-                    Designing scalable backend services and modern UIs using
-                    Spring Boot, React.js, REST APIs, and SQL/NoSQL databases.
+                    Building scalable APIs and modern web apps using Spring
+                    Boot, React.js, and databases like MySQL and MongoDB.
                   </p>
                 </div>
               </div>
@@ -103,12 +101,10 @@ export const AboutSection = () => {
                   <User className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">
-                    Cloud & DevOps Tools
-                  </h4>
+                  <h4 className="font-semibold text-lg">Cloud & Backend</h4>
                   <p className="text-muted-foreground">
-                    AWS Certified | Git, GitHub, Postman, CI/CD pipelines,
-                    Agile workflows, and cloud-native best practices.
+                    AWS certified developer with experience in cloud-ready
+                    applications, REST APIs, and scalable backend services.
                   </p>
                 </div>
               </div>
@@ -124,12 +120,10 @@ export const AboutSection = () => {
                   <Briefcase className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">
-                    Professional Experience
-                  </h4>
+                  <h4 className="font-semibold text-lg">Team Collaboration</h4>
                   <p className="text-muted-foreground">
-                    Internship experience delivering high-impact features,
-                    performance optimizations, and Agile sprint contributions.
+                    Experience working in Agile teams with Git workflows,
+                    code reviews, and collaborative development practices.
                   </p>
                 </div>
               </div>

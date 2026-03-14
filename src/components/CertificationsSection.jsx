@@ -7,11 +7,16 @@ import "aos/dist/aos.css";
 export const CertificationsSection = () => {
   const certifications = [
     {
-      title: "AWS Certified Solutions Architect - Associate (SAA-C03)",
+      title: "AWS Certified Solutions Architect – Associate (SAA-C03)",
       issuer: "Amazon Web Services (AWS)",
-      link: "https://www.credly.com/badges/118bec7b-abba-4812-b19c-18aa004b0f25",
+      link: "https://www.credly.com/badges/21643951-1f5d-4af1-8945-eafd84727a1d/public_url",
     },
-    ,{
+    {
+      title: "AWS Certified Developer – Associate (DVA-C02)",
+      issuer: "Amazon Web Services (AWS)",
+      link: "https://www.credly.com/badges/8a22d94b-5856-4d98-87a4-d2654a1ec9eb/public_url",
+    },
+    {
       title: "AWS Certified Cloud Practitioner (CLF-C02)",
       issuer: "Amazon Web Services (AWS)",
       link: "https://www.credly.com/badges/252fe228-47c4-4b06-82ce-aa6d5f6839f9/public_url",
@@ -27,10 +32,6 @@ export const CertificationsSection = () => {
       link: "https://www.credly.com/badges/a1ca003a-81ac-4bde-a325-c8ee9af635ad/public_url",
     },
     {
-      title: "Introduction to MongoDB",
-      issuer: "MongoDB University",
-    },
-    {
       title: "SQL (Basic) Certification",
       issuer: "HackerRank",
       link: "https://www.hackerrank.com/certificates/baaf541e14ef",
@@ -40,6 +41,10 @@ export const CertificationsSection = () => {
       issuer: "HackerRank",
       link: "https://www.hackerrank.com/certificates/480f35848f8e",
     },
+    {
+      title: "Introduction to MongoDB",
+      issuer: "MongoDB University",
+    }
   ];
 
   useEffect(() => {
